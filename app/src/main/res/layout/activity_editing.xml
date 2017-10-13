@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="madhaters.snap.MainActivity"
+    android:background="#0e002b">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/choiceHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Editor Menu"
+            android:textStyle="normal"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#53f4f2f2"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <SeekBar
+                android:id="@+id/sb_brightness"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#e32"
+                android:progress="5"
+
+                android:visibility="gone"/>
+
+            <SeekBar
+                android:id="@+id/sb_contrast"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#615e5e"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+                android:id="@+id/menuS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundMenuColor="#53f4f2f2"
+                app:icon_width="60dp"
+                app:icon_height="60dp"
+                app:item_backgroundColor="#0e002b"
+                app:item_colorSelected="#cde420"
+                app:backgroundNotifications="#efa70c"
+                app:item_textColor="#fff"
+                app:item_textSize="5sp">
+            </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
+
+            <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+                android:id="@+id/menuS2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundMenuColor="#53f4f2f2"
+                app:icon_width="60dp"
+                app:icon_height="60dp"
+                app:item_backgroundColor="#0e002b"
+                app:item_colorSelected="#cde420"
+                app:backgroundNotifications="#efa70c"
+                app:item_textColor="#fff"
+                app:item_textSize="5sp">
+            </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
+
+            <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+                android:id="@+id/menuFaceDetection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundMenuColor="#53f4f2f2"
+                app:icon_width="60dp"
+                app:icon_height="60dp"
+                app:item_backgroundColor="#0e002b"
+                app:item_colorSelected="#cde420"
+                app:backgroundNotifications="#efa70c"
+                app:item_textColor="#fff"
+                app:item_textSize="5sp">
+            </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
+
+            <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+                android:id="@+id/menuSnapEffect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:backgroundMenuColor="#53f4f2f2"
+                app:icon_width="60dp"
+                app:icon_height="60dp"
+                app:item_backgroundColor="#0e002b"
+                app:item_colorSelected="#cde420"
+                app:backgroundNotifications="#efa70c"
+                app:item_textColor="#fff"
+                app:item_textSize="5sp">
+            </com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView>
+
+        </RelativeLayout>
+        </LinearLayout>
+</RelativeLayout>
